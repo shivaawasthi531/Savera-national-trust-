@@ -428,9 +428,14 @@ function App() {
                     </div>
                   ))}
                 </div>
-                <button className="flex items-center gap-3 px-8 py-4 bg-white text-slate-950 rounded-full font-bold text-lg hover:bg-slate-200 transition-colors">
+                <a 
+                  href="https://docs.google.com/document/d/1qyUfnYKVCVDfBUzYIN-jQPretcyHa5YM/edit?usp=drivesdk&ouid=104567620854462506443&rtpof=true&sd=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex w-max items-center gap-3 px-8 py-4 bg-white text-slate-950 rounded-full font-bold text-lg hover:bg-slate-200 transition-colors"
+                >
                   Download Full PDF Guide <ArrowRight size={20} />
-                </button>
+                </a>
               </div>
               <div className="relative h-[400px] hidden lg:block">
                 {/* Abstract 3D elements representing documents */}
