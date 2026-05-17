@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .meteor-effect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 2px;
+    background: linear-gradient(to right, #ffffff, transparent);
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+    animation: meteor 5s linear infinite;
+  }
+  
+  .meteor-effect::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 1px;
+    background: linear-gradient(to right, #ffffff, transparent);
+  }
+}
